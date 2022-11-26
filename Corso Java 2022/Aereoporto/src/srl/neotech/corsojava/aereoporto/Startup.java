@@ -11,7 +11,7 @@ public class Startup {
     static List<Aereo> aereiInAvvicinamento1=new ArrayList <Aereo>();
 	public static void main(String[] args) {
 
-	Aeroporto aereoporto=new Aeroporto();
+	Aereoporto aereoporto=new Aereoporto();
 	Random random=new Random();
     Faker faker=new Faker();
 
@@ -19,14 +19,14 @@ public class Startup {
 
     Aereo aereoCheDecolla=new Aereo();
 
-    Integer randomDistanzaAeroporto=random.nextInt(1,500);
+    Integer randomDistanzaAereoporto=random.nextInt(1,500);
     Integer randomVelocita=random.nextInt(1,10);
     String  compagnia=faker.company().name();
     Integer idUnivico=faker.number().randomDigit();
 
     aereoCheDecolla.setCompagniaAerea(compagnia);
     aereoCheDecolla.setIdUnivico(idUnivico);
-    aereoCheDecolla.setDistanzaDallAeroporto(randomDistanzaAeroporto);
+    aereoCheDecolla.setDistanzaDallAereoporto(randomDistanzaAereoporto);
     aereoCheDecolla.setOrario(0);
     aereoCheDecolla.setVelocita(randomVelocita);
 
@@ -44,7 +44,7 @@ public class Startup {
 
     aereiInArrivo.setCompagniaAerea(compagnia);
     aereiInArrivo.setIdUnivico(idUnivico);
-    aereiInArrivo.setDistanzaDallAeroporto(randomDistanzaAeroporto);
+    aereiInArrivo.setDistanzaDallAereoporto(randomDistanzaAeroporto);
     aereiInArrivo.setOrario(randomOrario);
     aereiInArrivo.setVelocita(randomVelocita);
 

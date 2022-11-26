@@ -8,6 +8,6 @@ public boolean isHaGiornale() {
 	return haGiornale;
 }
 public void setHaGiornale(boolean haGiornale) {
-	this.haGiornale = haGiornale;
+	this.haGiornale=haGiornale;
 }
 }

@@ -8,6 +8,6 @@ public class Turista extends Passeggero {
 		return haAnimale;
 	}
 	public void setHaAnimale(boolean haAnimale) {
-		this.haAnimale = haAnimale;
+		this.haAnimale=haAnimale;
 	}
 }

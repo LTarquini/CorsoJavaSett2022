@@ -28,10 +28,10 @@ public class Aereoporto {
 		this.raggioDiAzione = raggioDiAzione;
 	}
 	public Aereo atteraggio(Aereo a) {
-		while(a.getDistanzaDallAeroporto()>0){
+		while(a.getDistanzaDallAereoporto()>0){
 		System.out.println("L'aereo si sta avvcinando"+a.getIdUnivico());
-		Integer distanzaAttuale=a.getDistanzaDallAeroporto()-a.getVelocita();
-		a.setDistanzaDallAeroporto(distanzaAttuale);
+		Integer distanzaAttuale=a.getDistanzaDallAereoporto()-a.getVelocita();
+		a.setDistanzaDallAereoporto(distanzaAttuale);
 		System.out.println("Blink");
 		}
 
@@ -78,9 +78,9 @@ public class Aereoporto {
 	return e;
 	}
 	public Aereo decollo(Aereo d) {
-		while(d.getDistanzaDallAeroporto()<d.getRaggioDiAzione()){
-		Integer distanzaAttuale=d.getDistanzaDallAeroporto()+d.getVelocita();
-		d.setDistanzaDallAeroporto(distanzaAttuale);
+		while(d.getDistanzaDallAereoporto()<d.getRaggioDiAzione()){
+		Integer distanzaAttuale=d.getDistanzaDallAereoporto()+d.getVelocita();
+		d.setDistanzaDallAereoporto(distanzaAttuale);
 	    System.out.println("Blink");
 			}
 

@@ -3,14 +3,14 @@ package srl.neotech.corsojava.aereoporto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aereo extends Aeroporto {
+public class Aereo extends Aereoporto {
 
 	private Integer idUnivico;
 	private Integer orario;
 	private String compagniaAerea;
 	private List <Passeggero> passeggeri=new ArrayList<Passeggero>();
 	private Integer velocita;
-	private Integer distanzaDallAeroporto;
+	private Integer distanzaDallAereoporto;
 	private ModelloAereo modello;
 	private Stato stato;
 
@@ -44,11 +44,11 @@ public class Aereo extends Aeroporto {
 	public void setVelocita(Integer velocita) {
 		this.velocita = velocita;
 	}
-	public Integer getDistanzaDallAeroporto() {
-		return distanzaDallAeroporto;
+	public Integer getDistanzaDallAereoporto() {
+		return distanzaDallAereoporto;
 	}
-	public void setDistanzaDallAeroporto(Integer distanzaDallAeroporto) {
-		this.distanzaDallAeroporto = distanzaDallAeroporto;
+	public void setDistanzaDallAereoporto(Integer distanzaDallAereoporto) {
+		this.distanzaDallAereoporto=distanzaDallAereoporto;
 	}
 	public ModelloAereo getModello() {
 		return modello;
