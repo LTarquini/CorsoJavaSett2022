@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Bootstrap {
+public class GiocoController {
 
-@GetMapping(value="impiccato")
 
-	public String webApp() {
-
-		return"static01";
-}
+	@GetMapping("forza4")
+	public String forzaQuattro() {
+		return "forzaQuattro";
+	}
 }
